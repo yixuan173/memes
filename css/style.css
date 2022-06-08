@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px，原預設font-size = 16px，手動跟改為16px * 62.5% = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #444;
+  background-image: linear-gradient(-20deg, #ffefff 0%, #fbfcdb 100%);
+}
+
+.title {
+  color: #222;
+  font-size: 4.8rem;
+  font-weight: 700;
+  padding-bottom: 0.8rem;
+}
+
+.meme-container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 20vh 1fr;
+}
+
+.memes-gallery {
+  grid-column: 1 / -1;
+  align-self: end;
+  width: 100%;
+
+  display: flex;
+  gap: 2.4rem;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.show-memes {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  padding-top: 3.2rem;
+
+  align-self: center;
+}
+
+.handler-memes-text {
+  align-self: center;
+}
+
+.gallery-img {
+  width: 115px;
+  height: 115px;
+
+  transition: all 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.3);
+}
+
+.memes {
+  display: flex;
+  flex-direction: column;
+}
+
+.memeImage {
+  width: 60%;
+  height: 90%;
+}
+
+.meme-text {
+  border-top: 3px solid #a5d8ff;
+  margin-bottom: 4.8rem;
+  padding-top: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.meme-text div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.file-text {
+  width: 85px;
+}
+
+.meme-text input {
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.btn {
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: #4dabf7;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.4rem 2.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #459ade;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-text {
+  font-size: 13.333px;
+  padding-top: 4px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+#image-file-input {
+  padding: 0;
+}
