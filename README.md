@@ -1,5 +1,5 @@
 # 梗圖產生器
-![logo](https://ppt.cc/fbEmvx@.gif "Logo 標題文字 2")
+![logo](https://github.com/yixuan173/memes/blob/master/khd7i-5puvb.gif "Logo 標題文字 2")
 
 [Demo網站](https://easy-memes-generator.netlify.app/ "梗圖產生器")
 
