@@ -12,4 +12,5 @@
 `HTML`
 `CSS`
 `JavaScript`
+`RWD`
 `串接imgflip的API獲取梗圖包`
